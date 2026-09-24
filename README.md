@@ -69,6 +69,8 @@ Terraform also manages Jenkins infrastructure, IAM for deployment, and ECR repos
 - Local Kafka, PostgreSQL, MongoDB
 - LocalStack for AWS emulation
 
+**Terraform on Apple Silicon:** use a native `darwin_arm64` binary (for example `~/.local/bin/terraform`) and prepend `$HOME/.local/bin` on `PATH`. Intel Terraform under Rosetta often hangs on AWS provider startup. Cost budget module: [`components/budget/README.md`](components/budget/README.md).
+
 ---
 
 ## Learning Roadmap
