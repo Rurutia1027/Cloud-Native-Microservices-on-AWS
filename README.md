@@ -2,11 +2,7 @@
 
 A hands-on project for **cloud-native backend engineering**, **microservices architecture**, **AWS platform design**, and **DevOps automation** on AWS.
 
-Each AWS service is modeled as a **unit** and documented across three layers:
-
-1. **Concept** — purpose, capabilities, and architectural role
-2. **Terraform** — provisioning, configuration, and operations
-3. **Microservices Integration** — runtime usage in EKS and day-2 AWS workflows
+Each AWS service is one **unit**. The explanation and the Terraform that creates the resources live in the same directory. Runtime usage in EKS is added later in that same unit.
 
 ---
 
@@ -69,7 +65,7 @@ Terraform also manages Jenkins infrastructure, IAM for deployment, and ECR repos
 - Local Kafka, PostgreSQL, MongoDB
 - LocalStack for AWS emulation
 
-**Terraform on Apple Silicon:** use a native `darwin_arm64` binary (for example `~/.local/bin/terraform`) and prepend `$HOME/.local/bin` on `PATH`. Intel Terraform under Rosetta often hangs on AWS provider startup. Cost budget module: [`components/budget/README.md`](components/budget/README.md).
+**Terraform on Apple Silicon:** use a native `darwin_arm64` binary (for example `~/.local/bin/terraform`) and prepend `$HOME/.local/bin` on `PATH`. Intel Terraform under Rosetta often hangs on AWS provider startup. Cost budgets: [`examples/budget/README.md`](examples/budget/README.md).
 
 ---
 
